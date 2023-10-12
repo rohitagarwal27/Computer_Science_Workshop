@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<head>
+    <title>Q8</title>
+</head>
+<body > 
+    <h2>Quotes </h2>
+    <ol>
+        <li><pre><q> Cleverness does not always lead to gain nor stupidity to poverty.</q>
+            — The Mahabharata <pre></li>
+        <li><pre>" To be happy always is something which is difficult to achieve.
+             That is to say, happiness 
+             and sorrow alternate in one's life and 
+             there cannot be uninterrupted happiness alone."
+                                                -Ramayana</pre></li>
+        <li><pre>"The one who seeks success must abandon six
+             vices: drowsiness, sloth, fear, anger, laziness 
+             and putting on work to a later time "
+                                            - Udyogaparva, Mahabharata</pre></li>
+        </ol>
+</body>
+</html>
