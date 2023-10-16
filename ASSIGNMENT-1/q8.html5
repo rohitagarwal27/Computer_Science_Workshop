@@ -1,0 +1,21 @@
+!DOCTYPE html>
+<head>
+    <title>Q8</title>
+</head>
+<body > 
+    <h2>Quotes </h2>
+    <ol>
+        <li><pre><q> Cleverness does not always lead to gain nor stupidity to poverty.</q>
+            — The Mahabharata <pre></li>
+        <li><blockquote cite="https://www.goodreads.com/work/quotes/94772994-r-m-ya-am"> <q> “You cannot count on the physical proximity of someone you love, all the time. A seed that sprouts at the foot of its parent tree remains stunted until
+             it is transplanted. Rama will be in my care, and he will be quite well. But ultimately, he will leave me too. Every human being, when the time comes, has to depart to seek
+              his fulfillment in his own way.” </q>
+                                    ― Valmiki, The Ramayana</li>
+        </blockquote>
+        <li><pre>"The one who seeks success must abandon six
+             vices: drowsiness, sloth, fear, anger, laziness 
+             and putting on work to a later time "
+                                            - Udyogaparva, Mahabharata</pre></li>
+        </ol>
+</body>
+</html>

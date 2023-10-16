@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>My Personal Info</h1>
+    <ul>
+        <li>Name-Rohit Agareal</li>
+        <li>RegNo-2241001034</li>
+        <li>Age-21</li>
+    </ul>
+
+    <h1>My educational qualification</h1>
+    <ol>
+        <li>10 <sup>th</sup> completed from-<em> .... </em> </li>
+        <li>12 <sup>th</sup> completed from- <em>....</em></li>
+        <li>10th Percentage- 90%</li>
+        <li>12th Percentage-91%</li>
+    </ol>
+
+    <h1>My Address</h1>
+    <address>
+    Your Name<br>
+    123 Main Street<br>
+    City, State ZIP Code<br>
+    Country
+    </address>
+
+    <h1>About My Self</h1>
+    <p> I LIKE TO CODE &#10084  
+      & EXPLORE &hearts;  
+    </p>
+
+</body>
+</html>
