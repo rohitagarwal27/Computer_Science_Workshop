@@ -1,0 +1,16 @@
+.item {
+    text-decoration: none;
+    color: white;
+    font-family: system-ui;
+    font-size: 25px;
+    padding: 30px;
+    border-radius: 20px;
+    font-weight: 500;
+     
+}
+
+.item:hover {
+    background-color:white;
+    color:red;
+    box-shadow: 2px 3px 3px red;
+}

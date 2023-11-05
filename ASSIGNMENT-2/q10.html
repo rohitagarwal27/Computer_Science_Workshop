@@ -1,0 +1,144 @@
+<!-- Q10 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q10</title>
+    <style>
+        h3 {
+            font-weight: 500;
+            text-align: center;
+            font-family: system-ui;
+        }
+
+        #form {
+            /* display: flex; */
+            justify-content: center;
+            width: 500px;
+            padding: 20px;
+            background-color: rgba(119, 112, 255, 0.081);
+            ;
+            border-radius: 20px;
+            box-shadow: 0 0 10px 0 rgba(119, 112, 255, 0.474);
+            ;
+        }
+
+        #my-textbox {
+            outline-width: 0;
+            width: 300px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            transition: .2s;
+            margin: 10px;
+        }
+
+        #my-textbox {
+            outline-width: 0;
+            width: 300px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            transition: .2s;
+            margin: 10px;
+        }
+
+        #my-textbox:focus {
+            box-shadow: 0 0 5px 1px rgba(119, 112, 255, 0.458);
+        }
+
+        #my-textbox:hover {
+            box-shadow: 0 0 5px 1px rgba(119, 112, 255, 0.756);
+        }
+
+        label {
+            color: rgb(91, 85, 197);
+            ;
+            padding: 10px;
+            font-size: 20px;
+            font-family: 'Segoe UI';
+        }
+
+        #place {
+            margin-bottom: 20px;
+            margin-top: 10px;
+            padding: 10px;
+        }
+
+        .btn {
+            background-color: rgb(119, 112, 255);
+            margin: 20px;
+            text-align: center;
+            color: white;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        .center-align {
+            /* display: flex; */
+            justify-content: center;
+            font-family: system-ui;
+        }
+
+        .center-img {
+            margin-left: 175px;
+            /* display: flex; */
+            text-align: center;
+            padding: 20px;
+        }
+
+        td {
+            height: 50px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="center-align" style="margin: 50px;">
+        <form action="" id="form">
+            <img class="center-img"
+                src="https://images.squarespace-cdn.com/content/v1/57713a8e2994cae381dd86fe/1510405002757-FP2W9HV8ZA0HP2IF3O6A/SOA-PNG.png"
+                alt="" height="100px">
+            <h3>Siksha O Anusandhan</h3>
+            <table id="table">
+                <tr>
+                    <td><label for="my-textbox">Username</label></td>
+                    <td><input type="text" placeholder="Enter name" id="my-textbox"></td>
+                </tr>
+                <tr>
+                    <td><label for="">Email</label></td>
+                    <td><input type="email" placeholder="Enter email" id="my-textbox"></td>
+                </tr>
+                <tr>
+                    <td><label for="">Mobile</label></td>
+                    <td><input type="tel" id="my-textbox" placeholder="Enter phone number"></td>
+                </tr>
+                <tr>
+                    <td><label for="">Gender</label></td>
+                    <td><input type="radio" id="female" value="Female">Female
+                        <input type="radio" id="female" value="Female">Male
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="">City</label></td>
+                    <td><select name="Select" id="my-textbox">
+                            <option value="">Select option: </option>
+                            <option value="">Bhubaneswar</option>
+                            <option value="">Delhi</option>
+                        </select></td>
+                </tr>
+                <tr>
+                    <td><label for="">Password</label></td>
+                    <td><input type="password" id="my-textbox" placeholder="Enter password"></td>
+                </tr>
+            </table>
+            <div class="btn">Submit</div>
+        </form>
+    </div>
+</body>
+
+</html>
