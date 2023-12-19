@@ -1,0 +1,149 @@
+ 
+
+<!-- Q7 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q10</title>
+    <style>
+        * {
+            font-family: system-ui;
+        }
+
+        h3 {
+            font-weight: 500;
+            text-align: center;
+            font-family: system-ui;
+        }
+
+        #form {
+            justify-content: center;
+            width: 500px;
+            padding: 20px;
+            background-color: rgba(119, 112, 255, 0.081);
+            ;
+            border-radius: 20px;
+            box-shadow: 0 0 10px 0 rgba(119, 112, 255, 0.474);
+            ;
+        }
+
+        .my-textbox {
+            outline-width: 0;
+            width: 300px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            transition: .2s;
+            margin: 10px;
+        }
+
+        .my-textbox:focus {
+            box-shadow: 0 0 5px 1px rgba(119, 112, 255, 0.458);
+        }
+
+        .my-textbox:hover {
+            box-shadow: 0 0 5px 1px rgba(119, 112, 255, 0.756);
+        }
+
+        label {
+            color: rgb(91, 85, 197);
+            ;
+            padding: 10px;
+            font-size: 20px;
+        }
+
+        #place {
+            margin-bottom: 20px;
+            margin-top: 10px;
+            padding: 10px;
+        }
+
+        .btn {
+            text-align: center;
+            margin: 10px;
+            width: 100px;
+            background-color: rgb(102, 96, 216);
+            color: white;
+            padding: 10px;
+            border-radius: 10px;
+            transition: .2s;
+        }
+
+        .btn:hover {
+            box-shadow: 0 0 5px 2px rgb(190, 188, 255);
+            background-color: rgb(61, 57, 173);
+        }
+
+        .center-align {
+            display: flex;
+            justify-content: center;
+        }
+
+        .center-img {
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            text-align: center;
+            padding: 20px;
+        }
+
+        td {
+            height: 50px;
+        }
+    </style>
+    <script src="../jquery.js"></script>
+    <script>
+        function clicked() {
+            var form = document.forms["form"];
+            var user = form["username"].value;
+            var mail = form["mail"].value;
+            var pass = form["password"].value;
+            var msg = "";
+            switch ("") {
+                case user:
+                    msg += "Username can't be empty.\n"
+                case mail:
+                    msg += "Mail can't be empty.\n"
+                case pass:
+                    msg += "Password can't be empty.\n"
+            }
+            if (msg){
+                alert(msg);
+            }      
+        }
+    </script>
+</head>
+
+<body>
+    <div class="center-align" style="margin: 50px;">
+        <form action="" name="form" id="form">
+            <img class="center-img"
+                src="https://images.squarespace-cdn.com/content/v1/57713a8e2994cae381dd86fe/1510405002757-FP2W9HV8ZA0HP2IF3O6A/SOA-PNG.png"
+                alt="" height="100px">
+            <h3>Siksha O Anusandhan</h3>
+            <table id="table">
+                <tr>
+                    <td><label for="">Username</label></td>
+                    <td><input type="text" placeholder="Enter name" class="my-textbox" name="username"></td>
+                </tr>
+                <tr>
+                    <td><label for="">Email</label></td>
+                    <td><input type="email" placeholder="Enter your mail" class="my-textbox" name="mail"></td>
+                </tr>
+                <tr>
+                    <td><label for="">Password</label></td>
+                    <td><input type="password" class="my-textbox" placeholder="Enter password" name="password"></td>
+                </tr>
+            </table>
+            <div class="center-align">
+                <div class="btn" onclick="clicked()">Submit</div>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

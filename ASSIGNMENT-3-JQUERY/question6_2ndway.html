@@ -1,0 +1,55 @@
+ <!-- Q6 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../jquery.js"></script>
+    <style>
+        td, th{
+            padding: 10px;
+        }
+        tr, td, th, table {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        #btn{
+            margin-top: 10px;
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+            $("#btn").click(function(){
+                $("table").append("<tr><td class='a'>Hello1</td><td class='b'>Hello2</td><td class='c'>Hello3</td></tr>")
+            })
+
+            $("#submit").click(function(){
+                $("." + $("#input-remove").val()).remove()
+            })
+        })
+
+    </script>
+    <title>Q6</title>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <th>Col1</th>
+            <th>Col2</th>
+            <th>Col3</th>
+        </tr>
+        <tr>
+            <td>Hello1</td>
+            <td>Hello2</td>
+            <td>Hello3</td>
+        </tr>
+    </table>
+    <button id="btn">Add Row</button><br><br>
+    <input type="text" placeholder="enter the id to remove" id="input-remove">
+    <button id="submit">Submit</button>
+</body>
+
+</html>

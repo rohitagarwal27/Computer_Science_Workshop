@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+	.parent{
+		position : relative ;
+		height : 1000px ;
+		padding : 50px 10px ;
+		background-color : #81adc8 ;
+	}
+	.sibling {
+		background : #f2f2f2 ;
+		padding : 10px ;
+		border : 1px solid #81adc8;
+		height: 200px;
+		max-width:100%;
+		background-image: url("1.jpg");
+		background-repeat: no-repeat;
+	}
+	ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		background-color: brown;
+		position : sticky ;
+		top: 10px ;
+	}
+	li {
+		float: left;
+	}
+	li a {
+		display: block;
+		color: orange;
+		padding: 12px 15px;
+	}
+	li a:hover {
+		background-color: yellow;
+	}
+</style>
+</head>
+<body>
+	<div class="parent">
+		<div class="sibling"></div>
+		<ul>
+			<li><a class="active" href="#home">Home</a></li>
+			<li><a href="#services">Services</a></li>
+			<li><a href="#Gallery">Gallery</a></li>
+			<li><a href="#About Us">About Us</a></li>
+		</ul>
+		
+		<h1 style="color:red;text-decoration:underline;">Heading</h1>
+                <hr style="width:50%;height:5px;margin-left:0;background-color:red;margin-top:-15px;">
+		<p>Scroll on the result tab to see the result. You see it acts as a relative element until it gets to a certain point on the screen, top: 10px and then it gets there just like a fixed element.</p>
+	</div>
+</body>
+</html>

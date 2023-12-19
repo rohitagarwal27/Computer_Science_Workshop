@@ -1,0 +1,137 @@
+
+
+<!-- Question 1. Count child elements using jQuery. Note: Count number of "p" elements 
+from the following:
+<body>
+<div id="selected"> 
+<p>Red</p>
+<p>White</p>
+<p>Green</p>
+<p>Black</p>
+<p>Blue</p>
+<p>Orange</p>
+</div>
+</body>
+Question 2. Attach a click and double-click event to the <p> element.
+<body>
+<p>Click me!</p>
+</body> 
+Question 3. Attach a function to the blur event. The blur event occurs when the 
+following <input> Field1 loses focus.
+<body> <form> 
+<input id="field1" type="text" value="Field 1">
+<input id="field2" type="text" value="Field 2">
+</form>
+</body>
+Question 4. Show a popup box without using JavaScript alert.
+Question 5. Create an HTML page which uses the following methods, (i) 
+slideDown(), (ii) animate(), (iii) fadeIn(), (iv) hide(), (v) show(), (vi) mouseenter(), 
+(vii) dblclick(), (viii) mouseleave(), (ix) attr(), and (x) html().
+Question 6. Create a page which contains a table and add button which will add 
+rows to this table. Change color of a text on button click. Add a text box and a 
+button. Write code to remove all the elements which ID matches with the text 
+entered in the text box upon clicking on the button.
+Question 7. Create a sign up form. Your users should be able to:
+(i) View the optimal layout for the site depending on their device's screen size
+(ii) See hover states for all interactive elements on the page
+(iii) Receive an error message when the form is submitted if:
+(a) Any input field is empty
+(b) The email address is not formatted correctly
+Hints: Use {var a = document.forms["FormName"]["FieldName"].value; if (a == null) it is empty}
+to check the field is empty or not; 
+In HTML5 you can do like this to check valid email address
+<form>
+<input type="email" placeholder="Enter your email">
+<input type="submit" value="Submit">
+</form>
+One of the new values to the type attribute is email. Using this type of field instead of the 
+regular text field the browser uses a regular expression to check that the user has in fact typed
+in an email address -->
+
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Question-1</title>
+        <script src="jquery.js">
+        </script>
+        <script>
+        $(document).ready(function(){
+            $("button").click(function(){ 
+            $("br").after("Number of elements "+ $("#selected").children().length); //  prepend or append will not work as br tag has no content enlosed and its self a non closing tag
+            });
+    });
+    </script>
+    </head>
+    <body>
+    <div id="selected" >
+        <p>Red</p>
+        <p>White</p>
+        <p>Green</p>
+        <p>Black</p>
+        <p>Blue</p>
+        <p>Orange</p>
+    </div>
+    <button>Count</button>
+     <br> <!--only one br tag is used if i use multiple br tag then multiple after effect would have taked place -->     
+    </body>
+</html>
+
+<!-- OR  another way
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Q1</title>
+    <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#ct").click(function () {
+                $("#show").text("No. of Children = "+$("#selected").children().length)
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <div id="selected">
+        <p>Red</p>
+        <p>White</p>
+        <p>Green</p>
+        <p>Black</p>
+        <p>Blue</p>
+        <p>Orange</p>
+    </div>
+    <button id="ct">Count</button>
+    <p id="show"></p>
+</body>
+
+</html> -->
+
+<!-- OR another way
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Question-1</title>
+        <script src="jquery.js">
+        </script>
+        <script>
+        $(document).ready(function(){
+            var count = $("#selected p").length; 
+            $("body").append("Number of elements "+count);
+        });
+    </script>
+    </head>
+    <body>
+    <div id="selected">
+        <p>Red</p>
+        <p>White</p>
+        <p>Green</p>
+        <p>Black</p>
+        <p>Blue</p>
+        <p>Orange</p>
+    </div>        
+    </body>
+</html> -->

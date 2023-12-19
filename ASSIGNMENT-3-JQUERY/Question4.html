@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Q4</title>
+    <style>
+        .popup{
+            /* display: flex; */
+            padding: 40px;
+            width: 300px;
+            border-radius: 20px;
+            background-color:black;
+            text-align: center;
+            transition: 1s;
+            font-family:monospace;
+            color: white;
+        }
+    </style>
+    <script src="jquery.js"></script>
+    <script>
+        $(document).ready(function(){
+            
+            $("button").click(function(){
+                $("button").hide();
+                $(".btn").addClass("popup").text("This is a POP UP box");
+            });
+        }); 
+    </script>
+</head>
+<body>
+     <div class="btn"></div>
+    <br>
+    <br>
+    <button> CLICK ME FOR POPUP </button>
+</body>
+</html>
+
+
+<!-- <!DOCTYPE html>
+<html>
+    <head>
+        <title>Question-4</title>
+        <script src="jquery.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("button").click(function(){
+                    $("#popupbox-container").fadeIn("fast");
+                });
+            });
+        </script>
+        <style>
+              #popupbox-container {
+            display: none;
+            position: fixed;
+            border: 4px solid cadetblue;
+            border-radius: 15px;
+            margin: 30px;
+            padding:30px;
+            width: 250px;
+            height: 100px;
+            background-color: rgba(199, 248, 248, 0.7);
+            text-align: center;
+            color: blue;
+            font-size: 35px;
+            font-family: 'Franklin Gothic Medium';
+            }
+            button{
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            text-align: center;
+
+        }
+        </style>
+    </head>
+    <body>
+        <button>Press me for popup box</button><br>
+        <div id="popupbox-container">This is A Pop Up Box</div>
+    </body>
+</html> -->

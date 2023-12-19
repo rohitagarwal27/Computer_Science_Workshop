@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.js"></script>
+    <style>
+         p{
+            display: inline;
+         }
+        .area1{
+            background-color: red;
+            height: 100px;
+            width: 340px;
+            color: white;
+             
+            /* position: fixed; */
+            display: none;
+        }
+        .area2{
+            background-color:yellow;
+            height: 100px;
+            width: 350px;
+            position:relative;
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+            $("#b1").click(function(){
+            $("#b1").hide();
+            $(".down").slideDown("fast");
+             
+           });
+
+           $("#b2").click(function(){
+            $(".animateit").animate({left:"+=20px"});
+           });
+           $("#b3").click(function(){
+            $(".hide").hide();
+           });
+           $("#b4").click(function(){
+            $(".hide").fadeIn(3000);
+           });
+           $("#b5").click(function(){
+            $(".show").show();
+           });
+           $(".enterarea2").mouseenter(function(){
+             $(this).css("background-color","blue");
+             $(this).css("color","white");
+
+           });
+           $(".leavearea2").mouseleave(function(){
+             $(this).css("background-color","orange");
+             $(this).css("color","white");
+           });
+           $(".click2time").click(function(){
+            $(this).dblclick().css({"background-color":"grey" , "color":"white"});
+           });
+           $("#attr").click(function () {
+                 alert($("img").attr("src"));
+             });
+            $("#htmlcode").click(function () {
+                alert( $("body").html() )
+             });
+
+
+        });
+
+    </script>
+</head>
+<body>
+    
+     <button id="b1"> SlideDown </button>
+     <div class="area1 down"> AREA 1 </div> 
+     <br>
+     <br>
+     <div class="area2 animateit"> AREA2 </div>
+     
+     <button id="b2"> Animate AREA2</button>
+      <br><br>
+     <div class="area2 hide"> HIDE ()</div>
+     <button id="b3">HIDE() AREA 2</button>
+
+      
+     <p>first hide to use fadein function</p>
+     <button id="b4">  FADE IN AREA2</button>
+     <div class="area1 show"> AREA 1</div>
+     <br><br>
+     <button id="b5">SHOW AREA 1</button>
+     <br><br>
+     <div class="area2 enterarea2"> AREA2 (MOUSE ENTER area 1 COLOR CHANGES)</div>
+     <br><br>
+     <div class="area2 leavearea2"> AREA2 (MOUSE leave COLOR CHANGES)</div>
+     <br><br>
+     <div class="area2 click2time"> <b>DOUBLE CLICK HERE</b> COLOR CHANGES</div>
+     <br><br>
+     <img src="https://lh3.googleusercontent.com/jUoaTIlBn5ibfQcND2n5OMD6Z7xoqNj-ShHlFR6QuLffLXD5pS8V2eNg1rGlrsRrnDkoQ28O8UHzqzBQKAGY4l1CS2NQSq2SkRScK6FOjl82jppyohK-" alt="GOOGLE" height="200px" width="200px">
+     <br><br>
+     <button id="attr">ATTR (image src)</button>
+     <br>
+     <CENTER>
+     <button id="htmlcode">VIEW HTML USED</button>
+     
+</body>
+</html>
+
+<!-- q5
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.js"></script>
+    <style>
+         
+        .area1{
+            background-color: red;
+            height: 100px;
+            width: 300px;
+             
+            /* position: fixed; */
+            display: none;
+        }
+        .area2{
+            background-color:yellow;
+            height: 100px;
+            width: 300px;
+            position: fixed;
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+            $("#b1").click(function(){
+            $("#b1").hide();
+            $("div").slideDown("fast");
+             
+           });
+
+           $("#b2").click(function(){
+            $(".area2").animate("left","+=20px");
+           });
+        });
+
+    </script>
+</head>
+<body>
+    
+     <button id="b1"> SlideDown </button>
+     <div class="area1"> </div> 
+     <br>
+     <br>
+     <div class="area2"> Animate</div>
+     
+     <button id="b2"> Animate</button>
+</body>
+</html> -->

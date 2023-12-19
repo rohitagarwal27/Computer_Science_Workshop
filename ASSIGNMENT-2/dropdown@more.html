@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+   .btn {
+           background-color: white;
+           color: gray;
+           padding: 12px;
+           font-size: 20px;
+           border: none;
+           
+        }
+    .div1 {
+           /* position: relative; */
+           /* width: 20px; */
+           /* display: inline-block; */
+           
+           /* width: 70px; */
+            
+           }
+   .div2 {
+                   display: none;
+                   /* position: absolute; */
+                   background-color: gray;
+                   min-width:100%;
+                   box-shadow: 0px 7px 14px 0px gray;
+          }
+    .div2 a {
+                    color: black;
+                    padding: 12px 16px;
+                    text-decoration: none;
+                    display: block;
+            }
+   
+     .div2 a:hover { 
+                            background-color: brown;
+                    }
+    .div1:hover{
+         display: inline-block;
+     }
+    .div1:hover .div2 {
+                                  display: block;
+                      }
+    .div1:hover .btn {
+                           background-color: orange;
+                     }
+  
+</style>
+</head>
+<body>
+<h2>Dropdown Menu</h2>
+<p>To check the dropdown menu, move your cursor around CS.</p>
+
+<div class="div1">
+<button class="btn">CS</button>
+<div class="div2">
+<a href="#OOP">Oop</a><a href="#DS">DS</a><a href="#DB">DB</a>
+</div>
+</div>
+
+</body>
+</html>

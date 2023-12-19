@@ -1,4 +1,10 @@
-<!-- Q10 -->
+<!-- Q10 
+. Create a registration page with SOA Logo in the middle of the page, form elements (text 
+input fields, password field, email field, radio button, drop-down list, and submit button), and 
+add CSS for each element to make it look better.
+Add password validations against input values. For example, required passwords to contain at 
+least 1 uppercase character, 1 lowercase character, and 1 number, the browser can validate that 
+for you-->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,6 +19,9 @@
             text-align: center;
             font-family: system-ui;
         }
+        body{
+            /* margin-left: 250px; */
+        }
 
         #form {
             /* display: flex; */
@@ -23,7 +32,7 @@
             ;
             border-radius: 20px;
             box-shadow: 0 0 10px 0 rgba(119, 112, 255, 0.474);
-            ;
+            
         }
 
         #my-textbox {
@@ -44,6 +53,7 @@
             padding: 10px;
             transition: .2s;
             margin: 10px;
+            /* text-align: center; */
         }
 
         #my-textbox:focus {
@@ -56,7 +66,7 @@
 
         label {
             color: rgb(91, 85, 197);
-            ;
+            
             padding: 10px;
             font-size: 20px;
             font-family: 'Segoe UI';
@@ -79,19 +89,27 @@
 
         .center-align {
             /* display: flex; */
-            justify-content: center;
+            /* justify-content: center; */
+             /* text-align: center;  */
+             /* align-items: center; */
             font-family: system-ui;
         }
 
-        .center-img {
-            margin-left: 175px;
+        img {
+            /* margin-left: 175px; */
             /* display: flex; */
-            text-align: center;
-            padding: 20px;
+            /* text-align: center; */
+            /* display: inline-block; */
+            /* object-position: center; */
+            /* padding: 20px; */
+            /* align-items:center; */
         }
 
         td {
             height: 50px;
+        }
+        .center-align{
+            margin-left: 250px;
         }
         
     </style>

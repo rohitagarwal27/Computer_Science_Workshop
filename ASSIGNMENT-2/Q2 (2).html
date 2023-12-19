@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Table using div and css</title>
+	<style>
+		.my_table{
+			display: table;
+			border: 2px solid black;
+			border-collapse: collapse;
+			/* position: relative; */
+			/* left: 40%; */
+			/* top: 100px; */
+		}
+		.my_row{
+			display: table-row;
+		}
+		.my_col{
+			display: table-cell;
+			border: 2px solid black;
+			padding: 5px;
+		}
+		.bold{
+			font-weight: bold;
+		}
+	</style>
+</head>
+<body>
+	<div class="my_table" align="center">
+		<div class="my_row">
+			<div class="my_col bold">Name</div>
+			<div class="my_col bold">Address</div>
+			<div class="my_col bold">Course</div>
+		</div>
+		<div class="my_row">
+			<div class="my_col">Rama</div>
+			<div class="my_col">Bhubaneswar</div>
+			<div class="my_col">B-Tech</div>
+		</div>
+		<div class="my_row">
+			<div class="my_col">Sita</div>
+			<div class="my_col">Cuttack</div>
+			<div class="my_col">MCA</div>
+		</div>
+	</div>
+</body>
+</html>

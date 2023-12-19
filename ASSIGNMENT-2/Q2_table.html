@@ -1,0 +1,63 @@
+   <!--Q2. Create a page to <div> elements. You may add nested <div> elements and add CSS to make 
+it look like a table. See the following example and extend it further.
+<div>
+<div>Name:</div>
+<div>MayurRamgir</div>
+<div>Address:</div>
+<div>Boston, MA, USA</div>
+<div>Course:</div>
+<div>MS Computational Science & Engineering
+</div>
+</div>  -->
+ 
+ 
+ <!DOCTYPE html>
+<html>
+<head>
+<style>
+	.table {		
+   		width: 90%;
+	}
+	.row{
+
+	}
+	.col {
+	   border: 1px solid #999999;
+	   float: left;
+	   height: 17px;
+	   width: 30%;
+	}
+	
+</style>
+</head>
+<body>
+<div>
+<div>Name:</div>
+<div>MayurRamgir</div>
+<div>Address:</div>
+<div>Boston, MA, USA</div>
+<div>Course:</div>
+<div>MS Computational Science & Engineering</
+div>
+</div>
+
+	<h2>Table using div tag</h2>
+	<div class="table" align="center">
+		<div class="row">
+			<div class="col">Name:</div>
+			<div class="col">Address:</div>
+                        <div class="col">Course:</div>
+		</div>
+		<div class="row">
+			<div class="col">MayurRamgir</div>
+			<div class="col">Boston, MA, USA</div>
+                        <div class="col">MS Computational Science & Engineering</div>
+		</div>
+		<div class="row">
+			<div class="col">Rabi</div>
+			<div class="col">India</div>
+                        <div class="col">CSE</div>
+		</div>
+	</div>
+</body>
+</html>

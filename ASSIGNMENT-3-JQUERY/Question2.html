@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="jquery.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("p").click(function () {
+                $("#click").text("single click"); // we didnot use apppend as many times we will click click it will add single click single click and not replace it so we used text as it replace previous one with new one
+            });
+            $("p").dblclick(function () {
+                $("#click").text("Double click"); // we didnot use apppend as many times we will click click it will add single click single click and not replace it so we used text as it replace previous one with new one
+            });
+        });
+    </script>
+    <title>Q2</title>
+</head>
+
+<body>
+    <p>Click me!</p>
+    <p id="click"></p>   <!-- p element is empty beacuse with click i have to add text inside it --> 
+</body>
+
+</html>
+
+
+<!-- 2 nd way 
+    
+     <!DOCTYPE html>
+<html>
+    <head>
+        <title>Question-2</title>
+        <script src="jquery.js">
+        </script>
+        <script>
+        $(document).ready(function(){
+            $(".p1").click(function(){
+                alert("you clicked me once.");
+            });
+            $(".p2").dblclick(function(){
+                alert("you clicked me twice.");
+            });
+        });
+    </script>
+    </head>
+    <body>    
+        <p class="p1">Click me Once</p> 
+        <p class="p2">Click me twice</p>  
+    </body>
+</html> -->
