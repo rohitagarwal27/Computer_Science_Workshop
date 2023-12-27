@@ -1,0 +1,99 @@
+<!-- Q8 -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title> FORM </title>
+	<meta charset="UTF-8">
+	<style>
+		div{ border: 2px solid black;
+		     background-color:black;
+		     padding:15px;
+		     border-radius:5px;
+		   }
+		   .image { border: none;
+		            text-align: center;   
+		         } 
+		input[type=text],input[type=email],select,textarea{
+		    width: 100%;
+		    padding: 10px 16px;
+		    margin: 6px 4px;
+		    display:inline-block;
+		    border:3px solid red;
+		    border-radius:5px;
+		    box-sizing: border-box;
+			
+			
+		    }  
+		 input[type=submit] {
+		     width: 100%;
+		     border: none;
+		     background-color:green;
+		     color:white;
+		     padding:12px 16px;
+		     margin:6px 4px;
+		     border-radius:5px;
+		     cursor:pointer;
+             font-family: 'Times New Roman', Times, serif;
+		     }
+		input[type=submit]:hover {
+		     background-color:rgb(27, 213, 27);
+		      font-size: large;
+
+		     } 
+		 input[type=text]:focus{
+		      background-color:rgb(157, 218, 231);
+		      }    
+		 label {display: inline-block;
+		        color: grey;
+		        padding: 10px 10px;
+		       }   
+		 input[type=radio] {
+		      width: 25px;
+		      height: 25px;
+		      margin: 10px 10px;
+		     
+		 }
+		 input[type=radio]:focus {
+		      outline: 2px solid blue;
+		      outline-offset: 2px;
+		     
+		 }
+	</style>
+</head>
+<body>
+	<h2 style="text-align:center; color:rgb(0, 251, 255); border: 1px solid black;"> HTML Form with CSS </h2>
+	<div>
+	<div class="image"><img src="tata1.png" height="80px" width="200px"></div>
+	<form name="personal" action="/action_page.php">
+	<label for="ename"> Employee Name </label>
+	<input type="text" id="ename" name="ename" placeholder="Emp Name">
+	
+	<label for="mail" > Employee Email </label>
+	<input type="email" id="mail" name="mail" placeholder="@gmail.com">
+	
+	<label for="dept"> Employee Department </label>
+	<input type="text" id="dept" name="dept" placeholder="Department">
+	
+	<label for="city"> City </label>
+	<select id="city" name="city">
+	<option value="BBSR"> Bhubaneswar </option>
+	<option value="CTC"> Bhadrak </option>
+	<option value="SBP"> Sambalpur </option>
+	<option value="ROU"> Rourkela </option>
+	</select>
+	
+	<label> Gender </label> <br>
+	<input type="radio" id="male" name="gender" value="Male">
+	<label for="male"> Male </label>
+	<input type="radio" id="female" name="gender" value="Female">
+	<label for="female"> Female </label><br>
+
+	
+	<label for="comm"> Comments </label>
+	<textarea id="comm" name="comm" rows="4" cols="10"> </textarea>
+	
+	<input type="submit" value="Submit">
+	</form>
+        </div>
+</body>
+</html>
